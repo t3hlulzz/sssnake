@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sssnake
 {
-    class VerticalLine
+    class VerticalLine : Figure
     {
-        List<Point> pList;
+      
 
         public VerticalLine(int x, int yTop, int yBot, char sym)
         {
@@ -17,18 +17,11 @@ namespace Sssnake
             for (int y = yTop; y < yBot; y++)
 
             {
-                Point p2 = new Point(x, y, sym);
+                Point p = new Point(x, y, sym);
 
-                pList.Add(p2);
+                pList.Add(p);
             }
         }
 
-            public void Drw2()
-        {
-            foreach (Point p2 in pList)
-            {
-                p2.Draw();
-            }
-        }
-    }
+     }
 }

@@ -10,19 +10,21 @@ namespace Sssnake
     {
         static void Main(string[] args)
         {
+            Console.SetBufferSize(80, 25);
 
-            Point p1 = new Point(1, 3, '*');
-                       p1.Draw();
+            HorizontalLine upLine = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine downLine = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine leftLine = new VerticalLine(0, 0, 25, '*');
+            VerticalLine rightLine = new VerticalLine(78, 0, 25, '*');
 
-            Point p2 = new Point(4, 5, '#');
-                      p2.Draw();
+            upLine.Drw();
+            downLine.Drw();
+            leftLine.Drw();
+            rightLine.Drw();
 
-            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
-            line.Drw();
-
-            VerticalLine vline = new VerticalLine(10, 4, 8, '-');
-            vline.Drw2();
-
+            HorizontalLine bucks = new HorizontalLine(6, 9, 10, '$');
+            bucks.Drw();
+                       
             Console.ReadLine();
         }
         
