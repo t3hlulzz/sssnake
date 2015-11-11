@@ -22,10 +22,43 @@ namespace Sssnake
             leftLine.Drw();
             rightLine.Drw();
 
-            Point p = new Point(4, 5, '$');
+            Point p = new Point(20, 12, '>');
             Snake snake = new Snake( p, 4, Direction.RIGHT);
             snake.Drw();
-                       
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+            System.Threading.Thread.Sleep(300);
+            snake.Move();
+
+            Console.Write("G");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("a");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("m");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("e");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("O");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("v");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("e");
+            System.Threading.Thread.Sleep(200);
+            Console.Write("r");
+            System.Threading.Thread.Sleep(200);
             Console.ReadLine();
         }
         
